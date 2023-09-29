@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import ParseSwift
+import Parse
 
 class ViewController: UIViewController {
 
