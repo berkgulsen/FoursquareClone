@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2C936ECCD774F3B2D3D20D4F /* Pods_FoursquareClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D53F855849549B0DF05BC0 /* Pods_FoursquareClone.framework */; };
 		7F2A15A22AC9E40E004A1577 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A15A12AC9E40E004A1577 /* PlacesVC.swift */; };
+		7F2A15A42ACA18E4004A1577 /* addPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A15A32ACA18E4004A1577 /* addPlaceVC.swift */; };
+		7F2A15A62ACA1A9E004A1577 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A15A52ACA1A9E004A1577 /* mapVC.swift */; };
+		7F2A15A82ACA205D004A1577 /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A15A72ACA205D004A1577 /* detailsVC.swift */; };
 		7F7014AB2AC477E100E11939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7014AA2AC477E100E11939 /* AppDelegate.swift */; };
 		7F7014AD2AC477E100E11939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7014AC2AC477E100E11939 /* SceneDelegate.swift */; };
 		7F7014AF2AC477E100E11939 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7014AE2AC477E100E11939 /* SignUpVC.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		510D6BE1920619DC8D179411 /* Pods-FoursquareClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.release.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.release.xcconfig"; sourceTree = "<group>"; };
 		7F2A15A12AC9E40E004A1577 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
+		7F2A15A32ACA18E4004A1577 /* addPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlaceVC.swift; sourceTree = "<group>"; };
+		7F2A15A52ACA1A9E004A1577 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
+		7F2A15A72ACA205D004A1577 /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
 		7F7014A72AC477E100E11939 /* FoursquareClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7014AA2AC477E100E11939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7014AC2AC477E100E11939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				7F7014AC2AC477E100E11939 /* SceneDelegate.swift */,
 				7F7014AE2AC477E100E11939 /* SignUpVC.swift */,
 				7F2A15A12AC9E40E004A1577 /* PlacesVC.swift */,
+				7F2A15A72ACA205D004A1577 /* detailsVC.swift */,
+				7F2A15A32ACA18E4004A1577 /* addPlaceVC.swift */,
+				7F2A15A52ACA1A9E004A1577 /* mapVC.swift */,
 				7F7014B02AC477E100E11939 /* Main.storyboard */,
 				7F7014B32AC477E200E11939 /* Assets.xcassets */,
 				7F7014B52AC477E200E11939 /* LaunchScreen.storyboard */,
@@ -212,7 +221,10 @@
 				7F7014AF2AC477E100E11939 /* SignUpVC.swift in Sources */,
 				7F7014AB2AC477E100E11939 /* AppDelegate.swift in Sources */,
 				7F2A15A22AC9E40E004A1577 /* PlacesVC.swift in Sources */,
+				7F2A15A82ACA205D004A1577 /* detailsVC.swift in Sources */,
+				7F2A15A42ACA18E4004A1577 /* addPlaceVC.swift in Sources */,
 				7F7014AD2AC477E100E11939 /* SceneDelegate.swift in Sources */,
+				7F2A15A62ACA1A9E004A1577 /* mapVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
