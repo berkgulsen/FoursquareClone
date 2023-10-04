@@ -43,7 +43,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     
                     for object in objects! {
                         if let placeName = object.object(forKey: "name") as? String {
-                            if let placeId = object.objectId as? String {
+                            if let placeId = object.objectId {
                                 self.placeIdArray.append(placeId)
                                 self.placeNameArray.append(placeName)
                             }
