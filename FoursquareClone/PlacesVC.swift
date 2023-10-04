@@ -12,6 +12,7 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     var placeNameArray = [String]()
     var placeIdArray = [String]()
+    var selectedPlaceId = ""
     
     
     override func viewDidLoad() {
@@ -67,6 +68,18 @@ class PlacesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 self.performSegue(withIdentifier: "toSignUpVC", sender: nil)
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let destinationVC = segue.destination as! DetailsVC
+            destinationVC.choosenPlaceId = selectedPlaceId
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPlaceId = placeIdArray[indexPath.row]
+        self.performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
