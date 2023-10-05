@@ -65,12 +65,24 @@ class DetailsVC: UIViewController {
                                 if error == nil {
                                     if data != nil {
                                         self.detailsImageView.image = UIImage(data: data!)
-                                        print("image printed")
                                     }
                                 }
                             }
                         }
                         
+                        
+                        let locationCoordinate = CLLocationCoordinate2D(latitude: self.choosenLatitude, longitude: self.choosenLongitude)
+                                        
+                        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+                        let region = MKCoordinateRegion(center: locationCoordinate, span: span)
+                        self.detailsMapView.setRegion(region, animated: true)
+                                        
+                        let annotation = MKPointAnnotation()
+                        annotation.coordinate = locationCoordinate
+                        annotation.title = self.detailsNameLabel.text
+                        annotation.subtitle = self.detailsTypeLabel.text
+                        self.detailsMapView.addAnnotation(annotation)
+                                    
                     }
                 }
             }
